@@ -9,6 +9,7 @@ const DashboardDefault = Loadable(lazy(() => import('pages/dashboard')));
 const Leads = Loadable(lazy(() => import('pages/leads')));
 // const NewLead = Loadable(lazy(() => import('pages/leads/NewLead')));
 const Campaigns = Loadable(lazy(() => import('pages/campaigns')));
+const EmailTemplate = Loadable(lazy(() => import('pages/email-template')));
 // render - sample page
 const SamplePage = Loadable(lazy(() => import('pages/extra-pages/SamplePage')));
 
@@ -39,6 +40,10 @@ const MainRoutes = {
     {
       path: '/campaigns',
       element: <Campaigns />
+    },
+    {
+      path: '/email-template',
+      element: <EmailTemplate />
     },
     {
       path: 'color',
